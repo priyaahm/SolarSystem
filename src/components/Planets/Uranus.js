@@ -1,5 +1,5 @@
 import React from "react";
-import mercury from "../pics/mercury.mp4";
+import uranus from "../pics/uranus.mp4";
 import "./planets.css";
 import Header from "../Header";
 import mercuryz1 from "../pics/mercuryz1.jpg";
@@ -10,12 +10,12 @@ import ns1 from "../pics/ns1.png";
 import yt from "../pics/yt.jpg";
 import stars from "../pics/stars.jpg";
 
-function Mercury() {
+function Uranus() {
   return (
     <>
       <Header />
       <video
-        src={mercury}
+        src={uranus}
         className="mercury-p"
         alt="background-image"
         autoPlay
@@ -23,18 +23,19 @@ function Mercury() {
         muted
       />
       <p className="first-line">A travellers's guide to the planet</p>
-      <h1 className="heading-m">Mercury</h1>
+      <h1 className="heading-m">Uranus</h1>
       <p className="para-m">
-        Mercury is only slightly larger than Earth's Moon. Its surface is
-        covered in tens of thousands of impact craters. From the surface of
-        Mercury, the Sun would appear more than three times as large as it does
-        when viewed from Earth.
+        Discovered by William Herschel in 1781, it is unique for its sideways
+        rotation, spinning on its side almost perpendicular to its orbit. This
+        tilt contributes to extreme seasons, with each pole experiencing 42
+        years of sunlight followed by 42 years of darkness. Uranus is composed
+        mostly of hydrogen and helium
       </p>
       <a href="#moredetails" className="button-m">
         More Details
       </a>
       <p className="facts-m1">
-        The diameter of Mercury is
+        The diameter of Uranus is
         <p className="number">
           <b>4,880 km</b>
         </p>
@@ -67,16 +68,16 @@ function Mercury() {
           <li>Orbital Period</li>
         </ul>
         <ul className="lists-m2">
-          <li>-1.9 to 5.5</li>
-          <li>57.9 million Kms</li>
-          <li> 2,439.7 Kms</li>
-          <li>3.7 m/s²(0.38 times that of Earth)</li>
+          <li>+5.7</li>
+          <li>2.7 billion Kms</li>
+          <li>25,362 Kms</li>
+          <li>8.69 m/s²(0.89 times of Earth)</li>
           <li>4.6 billion years</li>
-          <li> 87.97 Earth days(approx.)</li>
+          <li>84 Earth days(approx.)</li>
         </ul>
       </div>
     </>
   );
 }
 
-export default Mercury;
+export default Uranus;

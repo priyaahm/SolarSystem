@@ -1,14 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Mercury from "./components/Planets/Mercury";
 import Venus from "./components/Planets/Venus";
 import Earth from "./components/Planets/Earth";
 import Mars from "./components/Planets/Mars";
 import Jupiter from "./components/Planets/Jupiter";
-// import Content from "./components/Content";
+import { RouterProvider } from "react-router";
+import Saturn from "./components/Planets/Saturn";
+import Uranus from "./components/Planets/Uranus";
+import Neptune from "./components/Planets/Neptune";
 
 const router = createBrowserRouter([
   {
@@ -35,14 +38,20 @@ const router = createBrowserRouter([
     path: "jupiter",
     element: <Jupiter />,
   },
+  {
+    path: "saturn",
+    element: <Saturn />,
+  },
+  {
+    path: "uranus",
+    element: <Uranus />,
+  },
+  {
+    path: "neptune",
+    element: <Neptune />,
+  },
 ]);
 
-// ReactDOM.render(
-//   <BrowserRouter>
-//     <RouterProvider router={router} />
-//   </BrowserRouter>,
-//   document.getElementById("root")
-// );
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);
 // If you want to start measuring performance in your app, pass a function

@@ -1,21 +1,21 @@
 import React from "react";
-import mercury from "../pics/mercury.mp4";
+import neptune from "../pics/neptune.mp4";
 import "./planets.css";
 import Header from "../Header";
-import mercuryz1 from "../pics/mercuryz1.jpg";
 import nasa from "../pics/nasa.png";
 import wikipedia from "../pics/wikipedia.png";
 import isro1 from "../pics/isro1.webp";
 import ns1 from "../pics/ns1.png";
 import yt from "../pics/yt.jpg";
 import stars from "../pics/stars.jpg";
+import nep1 from "../pics/neptune1.webp";
 
-function Mercury() {
+function Neptune() {
   return (
     <>
       <Header />
       <video
-        src={mercury}
+        src={neptune}
         className="mercury-p"
         alt="background-image"
         autoPlay
@@ -23,18 +23,20 @@ function Mercury() {
         muted
       />
       <p className="first-line">A travellers's guide to the planet</p>
-      <h1 className="heading-m">Mercury</h1>
+      <h1 className="heading-m">Neptune</h1>
       <p className="para-m">
-        Mercury is only slightly larger than Earth's Moon. Its surface is
-        covered in tens of thousands of impact craters. From the surface of
-        Mercury, the Sun would appear more than three times as large as it does
-        when viewed from Earth.
+        Discovered in 1846, it is marked by deep blue hues attributed to methane
+        in its atmosphere. Neptune has the fastest winds in the solar system,
+        reaching speeds of over 1,200 miles per hour. Its Great Dark Spot, a
+        storm system similar to Jupiter's Great Red Spot, showcases the planet's
+        weather patterns. Neptune has a moon, Triton, which orbits in a
+        retrograde motion.
       </p>
       <a href="#moredetails" className="button-m">
         More Details
       </a>
       <p className="facts-m1">
-        The diameter of Mercury is
+        The diameter of Neptune is
         <p className="number">
           <b>4,880 km</b>
         </p>
@@ -79,4 +81,4 @@ function Mercury() {
   );
 }
 
-export default Mercury;
+export default Neptune;
